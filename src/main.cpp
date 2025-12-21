@@ -1,7 +1,20 @@
 #include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 int main() {
-    cout << "Rogue-like project started." << endl;
+    vector<string> map= {
+        "####################",
+        "#..................#",
+        "#..................#",
+        "#..................#",
+        "####################"
+    };
+
+    for (const string& row : map) {
+        cout << row << endl;
+    }
+
     return 0;
 }
